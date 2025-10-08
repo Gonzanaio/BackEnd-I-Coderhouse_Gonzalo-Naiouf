@@ -1,0 +1,29 @@
+crear un nuevo archivo CartManager.js
+crear un nuevo cart.json con la siguiente estructura
+[
+{
+    "id":"111aaa",
+    "products":[]
+}
+]
+
+el post crea un carrito vacio, como en el ejemplo
+
+get /:cid 
+debe devolver los productos del carrito que tenga ese id
+
+post /:cid/product/:pid 
+
+agregar el producto al carrito seleccionado
+    tengo que tener el id del producto y la cantidad del producto
+
+    {
+        id : carrito
+        products : [
+            {
+                id : producto,
+                cantidad : x 
+            }
+
+        ]
+    }

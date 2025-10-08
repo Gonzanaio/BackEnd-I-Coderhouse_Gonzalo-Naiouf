@@ -1,0 +1,92 @@
+[
+  {
+    "id": "bf4741bc-b4fa-457a-afad-4c1b21fd81be",
+    "title": "Tazas",
+    "description": "Set de 4 tazas",
+    "price": 800,
+    "thumbnail": "sin Img",
+    "code": "BZR001",
+    "stock": 20
+  },
+  {
+    "id": "7f5fe25a-4ca5-47b6-91f9-47672618a258",
+    "title": "Tazas de café",
+    "description": "Set de 4 tazas con diseño moderno",
+    "price": 800,
+    "thumbnail": "sin Img",
+    "code": "BZR002",
+    "stock": 20
+  },
+  {
+    "id": "79a3466a-cf3d-4b75-adbc-24a1ee7172ac",
+    "title": "Cucharas de acero",
+    "description": "Set de 12 cucharas de acero inoxidable",
+    "price": 500,
+    "thumbnail": "sin Img",
+    "code": "BZR003",
+    "stock": 30
+  },
+  {
+    "id": "b5ce2f1f-9900-45d1-a533-f2637b5b1549",
+    "title": "Vasos de vidrio",
+    "description": "Juego de 6 vasos transparentes",
+    "price": 650,
+    "thumbnail": "sin Img",
+    "code": "BZR004",
+    "stock": 25
+  },
+  {
+    "id": "8349f014-5fd7-4093-963a-54ae51718fdf",
+    "title": "Sartenes antiadherentes",
+    "description": "Sartén de 24 cm antiadherente",
+    "price": 2200,
+    "thumbnail": "sin Img",
+    "code": "BZR005",
+    "stock": 10
+  },
+  {
+    "id": "92fb0611-1377-486f-b99b-316417460656",
+    "title": "Ollas de aluminio",
+    "description": "Olla de 3 litros con tapa",
+    "price": 1800,
+    "thumbnail": "sin Img",
+    "code": "BZR006",
+    "stock": 12
+  },
+  {
+    "id": "ac463664-2a01-408d-8bf0-61ee1c4ac141",
+    "title": "Coladores plásticos",
+    "description": "Set de 2 coladores de plástico resistentes",
+    "price": 400,
+    "thumbnail": "sin Img",
+    "code": "BZR007",
+    "stock": 18
+  },
+  {
+    "id": "5674ffb9-dd5b-4085-a7b3-f772382c4a0c",
+    "title": "Tablas de cortar",
+    "description": "Tabla de madera para cocina",
+    "price": 700,
+    "thumbnail": "sin Img",
+    "code": "BZR008",
+    "stock": 20
+  },
+  {
+    "id": "fcf2c006-5a86-4309-b4f4-6216cb050687",
+    "title": "Cuchillos de cocina",
+    "description": "Set de 3 cuchillos con funda",
+    "price": 950,
+    "thumbnail": "sin Img",
+    "code": "BZR009",
+    "stock": 15
+  },
+  {
+    "id": "effd710b-5f3e-453e-83e7-1481cbdd61a0",
+    "title": "Recipientes plásticos",
+    "description": "Set de 5 recipientes para almacenamiento",
+    "price": 600,
+    "thumbnail": "sin Img",
+    "code": "BZR010",
+    "stock": 25
+  }
+]

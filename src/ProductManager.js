@@ -88,6 +88,7 @@ class ProductManager {
   }
 }
 export default ProductManager;
+
 //utilizo la funcion main para probar las funcionalidades de la clase ProductManager
 
 // async function main() {

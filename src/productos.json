@@ -1,28 +1,10 @@
 [
   {
-    "id": "bf4741bc-b4fa-457a-afad-4c1b21fd81be",
-    "title": "Tazas",
-    "description": "Set de 4 tazas",
-    "price": 800,
-    "thumbnail": "sin Img",
-    "code": "BZR001",
-    "stock": 20
-  },
-  {
-    "id": "7f5fe25a-4ca5-47b6-91f9-47672618a258",
-    "title": "Tazas de café",
-    "description": "Set de 4 tazas con diseño moderno",
-    "price": 800,
-    "thumbnail": "sin Img",
-    "code": "BZR002",
-    "stock": 20
-  },
-  {
     "id": "79a3466a-cf3d-4b75-adbc-24a1ee7172ac",
     "title": "Cucharas de acero",
     "description": "Set de 12 cucharas de acero inoxidable",
     "price": 500,
-    "thumbnail": "sin Img",
+    "thumbnail": "https://placehold.co/600x400",
     "code": "BZR003",
     "stock": 30
   },
@@ -31,7 +13,7 @@
     "title": "Vasos de vidrio",
     "description": "Juego de 6 vasos transparentes",
     "price": 650,
-    "thumbnail": "sin Img",
+    "thumbnail": "https://placehold.co/600x400",
     "code": "BZR004",
     "stock": 25
   },
@@ -40,7 +22,7 @@
     "title": "Sartenes antiadherentes",
     "description": "Sartén de 24 cm antiadherente",
     "price": 2200,
-    "thumbnail": "sin Img",
+    "thumbnail": "https://placehold.co/600x400",
     "code": "BZR005",
     "stock": 10
   },
@@ -49,7 +31,7 @@
     "title": "Ollas de aluminio",
     "description": "Olla de 3 litros con tapa",
     "price": 1800,
-    "thumbnail": "sin Img",
+    "thumbnail": "https://placehold.co/600x400",
     "code": "BZR006",
     "stock": 12
   },
@@ -58,7 +40,7 @@
     "title": "Coladores plásticos",
     "description": "Set de 2 coladores de plástico resistentes",
     "price": 400,
-    "thumbnail": "sin Img",
+    "thumbnail": "https://placehold.co/600x400",
     "code": "BZR007",
     "stock": 18
   },
@@ -67,7 +49,7 @@
     "title": "Tablas de cortar",
     "description": "Tabla de madera para cocina",
     "price": 700,
-    "thumbnail": "sin Img",
+    "thumbnail": "https://placehold.co/600x400",
     "code": "BZR008",
     "stock": 20
   },
@@ -76,7 +58,7 @@
     "title": "Cuchillos de cocina",
     "description": "Set de 3 cuchillos con funda",
     "price": 950,
-    "thumbnail": "sin Img",
+    "thumbnail": "https://placehold.co/600x400",
     "code": "BZR009",
     "stock": 15
   },
@@ -85,8 +67,32 @@
     "title": "Recipientes plásticos",
     "description": "Set de 5 recipientes para almacenamiento",
     "price": 600,
-    "thumbnail": "sin Img",
+    "thumbnail": "https://placehold.co/600x400",
     "code": "BZR010",
     "stock": 25
+  },
+  {
+    "id": "9d92070a-23ee-4725-857c-6336e3d73513",
+    "title": "Funda Celular",
+    "price": "600",
+    "thumbnail": "https://placehold.co/600x400"
+  },
+  {
+    "id": "165056d5-a287-467a-bcde-cd7081f1a18b",
+    "title": "Soporte Plantas",
+    "price": "700",
+    "thumbnail": "https://placehold.co/600x400"
+  },
+  {
+    "id": "4ee7f7cc-f77f-4a0d-a626-c130bdebe16b",
+    "title": "Cable Usb",
+    "price": "550",
+    "thumbnail": "https://placehold.co/600x400"
+  },
+  {
+    "id": "06fff805-c2cf-4fed-9ebc-fbb6bda72481",
+    "title": "Canasto Baño",
+    "price": "460",
+    "thumbnail": "/img/1761695353799-2fedcadfc71ea6d10d593492200a.jpg"
   }
 ]

@@ -1,0 +1,64 @@
+<div style=" display: flex; flex-direction: column; align-items: center;">
+    <h1>Dashboard de productos</h1>
+   
+    <div style="margin-bottom: 20px; margin-top:20px; padding:10px; border: 2px solid black; width:50%; border-radius:5px; background-color: rgb(221, 221, 221); box-shadow: 2px 2px 5px rgba(0,0,0,0.5);"> 
+        <form style="display: flex; flex-direction:column ;justify-content: center;align-items:center;" action="http://localhost:8080/api/products" method="post" enctype="multipart/form-data" >
+            <input style="width: 50%; height:50px; border-radius:10px;margin:5px; " type="text" name="title" placeholder="nombre del producto">
+            <input style="width: 50%; height:50px; border-radius:10px;margin:5px; "type="number" name="price" placeholder="precio del producto">
+            <input style="font-size:20px;width: 50%; height:50px; border-radius:10px;margin:5px; "type="file" name="file" placeholder="imagen del producto">
+            <button style="font-size:20px;width: 50%; height:50px; border-radius:10px;margin:5px; background-color:rgba(17, 203, 14, 0.838); " onclick="alert(ProductoAgregado)" type="submit">
+              <style>
+                button:hover {
+                  background-color: rgba(10, 150, 10, 0.838);
+                  cursor: pointer;
+                }
+
+              </style>
+              Agregar Producto</button>
+        </form>
+    </div>
+
+    
+
+        <div style="display: flex; flex-wrap: wrap; margin: 1rem 16rem ; ">
+        {{#each products}}
+
+        <div style="border: 1px solid rgba(192, 243, 145, 0.269);
+        padding: 10px; margin: 10px;
+        width: 200px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+        background-color: rgb(221, 221, 221);">
+        <img style="max-width: 100%; box-shadow:1px 1px 5px 5px white" src= {{this.thumbnail}} alt="">
+            <h2 style="color:black">{{this.title}}</h2>
+            <p>Price: ${{this.price}}</p>
+            <p>Description: {{this.description}}</p>
+<button
+  style="background-color:red; color:white;"
+  onclick="deleteProduct('{{this.id}}')">
+  Eliminar Producto
+</button>
+
+<script>
+async function deleteProduct(id) {
+  if (!confirm("¿Seguro que querés eliminar este producto?")) return;
+
+  const res = await fetch(`/api/products/${id}`, {
+    method: "DELETE",
+  });
+
+  const data = await res.json();
+
+  if (res.ok) {
+    alert("Producto eliminado con éxito");
+    location.reload(); // refresca la página
+  } else {
+    alert("Error al eliminar: " + data.error);
+  }
+}
+</script>
+
+        </div>
+    {{/each}}
+        </div>
+</div>

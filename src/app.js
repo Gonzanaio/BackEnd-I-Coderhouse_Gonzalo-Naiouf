@@ -1,14 +1,24 @@
 import express from "express";
 import ProductManager from "./ProductManager.js";
 import CartManager from "./CartManager.js";
+import { engine } from "express-handlebars";
+import viewsRouter from "./routes/views.js";
+import productsRouter from "./views/products.js";
 
 const app = express();
 app.use(express.json());
+app.use(express.static("public"));
+app.use(express.urlencoded({ extended: true }));
+// handlebars config.
+app.engine("handlebars", engine());
+app.set("view engine", "handlebars");
+app.set("views", "./src/views");
 
-const productManager = new ProductManager("./productos.json");
+//EndPoints
+app.use("/", viewsRouter);
+app.use("/api/products", productsRouter);
+const productManager = new ProductManager("./src/productos.json");
 const cartManager = new CartManager("./cart.json");
-
-// Rutas para productos
 
 app.get("/api/products", async (req, res) => {
   try {
@@ -61,7 +71,7 @@ app.post("/api/products", async (req, res) => {
       .status(201)
       .json({ newProduct, message: "Producto agregado con exito" });
   } catch (error) {
-    res.status(500).json({ error: error.message });
+    res.status(500).json({ error: "app" + error.message });
   }
 });
 

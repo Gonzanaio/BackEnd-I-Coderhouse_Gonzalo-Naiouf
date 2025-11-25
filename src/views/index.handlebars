@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="header-links">
+        <h1 class="title-container">HOME </h1>
+        <a id="cart-link" href="#">🛒</a>
+    </div>
+       
+    
+    <div class="products-container">
+        {{#each products}}
+            <div class="product-card">
+                <img class="product-img" src="{{this.thumbnail}}" alt="{{this.title}}">
+                <h2 class="product-title">{{this.title}}</h2>
+                <p>Price: ${{this.price}}</p>
+                <p>{{this.description}}</p>
+                <div class="button-group">
+                    <button class="btn-add" data-id="{{this.id}}">
+  Agregar al carrito
+</button>
+                    <a class="btn-view" href="api/products/{{this.id}}">Ver más</a>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+    <div class="pag-container">
+        {{#each links}}
+            <a href={{this.links}}>{{this.text}}</a>
+        {{/each}}
+    </div>
+</div>

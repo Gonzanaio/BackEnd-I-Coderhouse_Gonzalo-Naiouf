@@ -1,0 +1,66 @@
+<div class="header-links">
+  <a href="/">⬅️</a>
+  <a id="cart-link" href="#">🛒</a>
+</div>
+
+
+<div class="detail-container">
+
+  <img src="{{product.thumbnail}}" alt="{{product.thumbnail}}"class="detail-img">
+    <div class="detail-info">
+
+  <h1>{{product.title}}</h1>
+
+  <p><strong>Precio:</strong> ${{product.price}}</p>
+
+  <p><strong>Descripción:</strong> {{product.description}}</p>
+
+<div>
+  <button class="qty-minus" data-id="{{product._id}}">-</button>
+
+  <input
+    type="text"
+    class="qty-input"
+    value="1"
+    readonly
+    data-id="{{product._id}}"
+  />
+
+  <button class="qty-plus" data-id="{{product._id}}">+</button>
+</div>
+
+<button class="btn-add" data-id="{{product._id}}">
+  Agregar al carrito
+</button>
+    </div>
+
+
+</div>
+<h2>También te puede interesar</h2>
+
+<div class="related-container">
+
+  {{#each relatedProducts}}
+  <div class="related-card">
+    <img  src="{{this.thumbnail}}" alt="{{this.title}}">
+    <h3>{{this.title}}</h3>
+    <p>$ {{this.price}}</p>
+    <div class="button-group">
+
+    <button class="btn-add" data-id="{{this._id}}">
+      Agregar al carrito
+    </button>
+    <a href="/api/products/{{this._id}}" class="ver-mas-btn">
+      Ver más
+    </a>
+
+    </div>
+  </div>
+  {{/each}}
+
+  {{#unless relatedProducts}}
+    <p>No hay productos relacionados.</p>
+  {{/unless}}
+
+</div>
+

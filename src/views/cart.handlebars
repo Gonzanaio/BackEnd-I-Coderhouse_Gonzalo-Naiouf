@@ -1,0 +1,45 @@
+    <div class="header-links">
+        <h1 class="title-container">Mi Carrito </h1>
+       <a href="/">🏠</a>
+    </div>
+
+<div class="cart-container">
+
+{{#if products.length}}
+  <div class="products-in-cart">
+    {{#each products}}
+      <div class="cart-item" data-id="{{this.product._id}}">
+        <img src="{{this.product.thumbnail}}" alt="{{this.product.title}}" class="cart-img">
+        <div class="cart-info">
+          <h3>{{this.product.title}}</h3>
+          <div class="price-info">
+
+<p>Subtotal: $<span class="subtotal">{{multiply this.product.price this.quantity}}</span></p>
+           <p style="margin:0px;font-size: x-small;
+    font-style: italic;">Precio unitario: $<span class="unit-price">{{this.product.price}}</span></p>
+          </div>
+
+      </div>
+        <div class="btns">
+
+          <div class="quantity-control">
+            <button class="btn-minus" data-id="{{this.product._id}}">-</button>
+            <input type="text" class="qty-input" value="{{this.quantity}}" readonly data-id="{{this.product._id}}">
+            <button class="btn-plus" data-id="{{this.product._id}}">+</button>
+          </div>
+          <button class="btn-remove" data-id="{{this.product._id}}">Eliminar</button>
+        </div>
+        </div>
+    {{/each}}
+  </div>
+  <div class="cart-detail">
+     <h2>Total: $<span id="cart-total">{{total}}</span></h2>
+    <button id="btn-delete">Vaciar carrito</button>
+    <button id="btn-checkout">Ir al pago</button>
+
+  </div>
+</div>
+{{else}}
+  <p>Tu carrito está vacío.</p>
+{{/if}}
+
